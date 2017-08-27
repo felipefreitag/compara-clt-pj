@@ -14,9 +14,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-      cltMes: 0,
-      pjMes:  0,
+      employeeMonthly: 0,
+      companyMonthly:  0,
+      showResult: false,
+      employeeYearly: 0,
+      companyYearly: 0,
     };
+  }
+
+  employeeYearlyEarnings(employeeMonthly) {
+    console.log(employeeMonthly * 0.7 * 13.3);
+    return employeeMonthly * 0.7 * 13.3;
+  }
+
+  companyYearlyEarnings(companyMonthly) {
+    return companyMonthly * 12 - (12 * 50);
   }
 
   render() {
@@ -57,9 +69,9 @@ class App extends Component {
                     <TextField
                       floatingLabelText="Salário mensal bruto CLT"
                       fullWidth={true}
-                      onChange={(event) => {                        
+                      onChange={(event) => {
                         this.setState({
-                          cltMes: event.target.value,
+                          employeeMonthly: event.target.value,
                         })
                       }}
                     />
@@ -70,7 +82,7 @@ class App extends Component {
                       fullWidth={true}
                       onChange={(event) => {
                         this.setState({
-                          pjMes: event.target.value,
+                          companyMonthly: event.target.value,
                         })
                       }}
                     />
@@ -81,39 +93,54 @@ class App extends Component {
                 <TableRow>
                   <TableRowColumn style={{ textAlign: 'center' }}>
                       <RaisedButton
-                        label="Calcular"
+                        label={this.state.showResult ?
+                          "Ocultar resultados" : "Calcular"}
                         primary={true}
+                        onClick={() => {
+                          this.setState({
+                            showResult: !this.state.showResult,
+                            employeeYearly: this.employeeYearlyEarnings(
+                              this.state.employeeMonthly),
+                            companyYearly: this.companyYearlyEarnings(
+                              this.state.companyMonthly),
+                          })
+                        }}
                       />
                   </TableRowColumn>
                 </TableRow>
               </TableFooter>
             </Table>
 
-            <Table id='results' selectable={false}>
-              <TableHeader
-                displaySelectAll={false}
-                adjustForCheckbox={false}
-              >
-                <TableRow>
-                  <TableHeaderColumn style={{textAlign:'center'}}>
-                    Rendimento anual CLT
-                  </TableHeaderColumn>
-                  <TableHeaderColumn style={{textAlign:'center'}}>
-                    Rendimento anual PJ
-                  </TableHeaderColumn>
-                </TableRow>
-              </TableHeader>
-              <TableBody displayRowCheckbox={false}>
-                <TableRow>
-                  <TableRowColumn>
-                    {this.state.cltMes * 12}
-                  </TableRowColumn>
-                  <TableRowColumn>
-                    {this.state.pjMes * 12}
-                  </TableRowColumn>
-                </TableRow>
-              </TableBody>
-            </Table>
+            { this.state.showResult ?
+              <Table id='results' selectable={false}>
+                <TableHeader
+                  displaySelectAll={false}
+                  adjustForCheckbox={false}
+                >
+                  <TableRow>
+                    <TableHeaderColumn style={{textAlign:'center'}}>
+                      Rendimento anual CLT
+                    </TableHeaderColumn>
+                    <TableHeaderColumn style={{textAlign:'center'}}>
+                      Rendimento anual PJ
+                    </TableHeaderColumn>
+                  </TableRow>
+                </TableHeader>
+                <TableBody displayRowCheckbox={false}>
+                  <TableRow>
+                    <TableRowColumn>
+                      {this.state.employeeYearly}
+                    </TableRowColumn>
+                    <TableRowColumn>
+                      {this.state.companyYearly}
+                    </TableRowColumn>
+                  </TableRow>
+                </TableBody>
+              </Table>
+              :
+              <h5>Use apenas números. Clique no botão para ver os resultados.</h5>
+            }
+
           </div>
         </div>
       </MuiThemeProvider>
