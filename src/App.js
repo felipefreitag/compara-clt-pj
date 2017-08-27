@@ -7,6 +7,8 @@ import AppBar from 'material-ui/AppBar';
 import Page from './Page'
 import DataEntry from './DataEntry'
 import ShowResults from './ShowResults'
+import Disclaimer from './Disclaimer'
+// functions
 import { handleChange, handleEmployeeChange, handleCompanyChange } from './Functions'
 import { employeeYearlyEarnings, companyYearlyEarnings } from './Functions'
 
@@ -58,14 +60,16 @@ class App extends Component {
               calculate={this.calculate.bind(this)}
             />
             { this.state.showResult ?
-              <ShowResults
-                employeeYearly={this.state.employeeYearly}
-                companyYearly={this.state.companyYearly}
-              />
+              <div>
+                <ShowResults
+                  employeeYearly={this.state.employeeYearly}
+                  companyYearly={this.state.companyYearly}
+                />
+                <Disclaimer />
+              </div>
               :
               <h5>Use apenas números. Clique no botão para ver os resultados.</h5>
             }
-
           </Page>
         </div>
       </MuiThemeProvider>

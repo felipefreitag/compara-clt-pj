@@ -21,14 +21,10 @@ const ShowResults = props => (
       <TableRow>
         <TableRowColumn>
           <p>Recebido em um ano:</p>
-        </TableRowColumn>
-        <TableRowColumn>
           <h3>R$ {props.employeeYearly}</h3>
         </TableRowColumn>
         <TableRowColumn>
           <p>Recebido em um ano:</p>
-        </TableRowColumn>
-        <TableRowColumn>
           <h3>R$ {props.companyYearly}</h3>
         </TableRowColumn>
       </TableRow>
