@@ -24,10 +24,16 @@ const DataEntry = props => {
       <TableBody displayRowCheckbox={false}>
         <TableRow>
           <TableRowColumn>
-            <TextInput onChange={props.handleEmployeeChange} />
+            <TextInput
+              onChange={props.handleEmployeeChange}
+              label="Salário bruto CLT"
+            />
           </TableRowColumn>
           <TableRowColumn>
-            <TextInput onChange={props.handleCompanyChange} />
+            <TextInput
+              onChange={props.handleCompanyChange}
+              label="Faturamento mensal MEI"
+            />
           </TableRowColumn>
         </TableRow>
       </TableBody>
@@ -36,7 +42,7 @@ const DataEntry = props => {
           <TableRowColumn style={{ textAlign: 'center' }}>
               <RaisedButton
                 label={showResult ?
-                  "Ocultar resultados" : "Calcular"}
+                  "Recalcular" : "Calcular"}
                 primary={true}
                 onClick={props.calculate}
               />

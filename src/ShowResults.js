@@ -10,17 +10,23 @@ const ShowResults = props => (
     >
       <TableRow>
         <TableHeaderColumn style={{textAlign:'center'}}>
-          Rendimento anual CLT
+          Resultados CLT
         </TableHeaderColumn>
         <TableHeaderColumn style={{textAlign:'center'}}>
-          Rendimento anual PJ
+          Resultados PJ (MEI)
         </TableHeaderColumn>
       </TableRow>
     </TableHeader>
     <TableBody displayRowCheckbox={false}>
       <TableRow>
         <TableRowColumn>
+          <p>Recebido em um ano:</p>
+        </TableRowColumn>
+        <TableRowColumn>
           <h3>R$ {props.employeeYearly}</h3>
+        </TableRowColumn>
+        <TableRowColumn>
+          <p>Recebido em um ano:</p>
         </TableRowColumn>
         <TableRowColumn>
           <h3>R$ {props.companyYearly}</h3>

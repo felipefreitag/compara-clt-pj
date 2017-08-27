@@ -1,9 +1,9 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 
-const TextInput = ({ onChange }) => (
+const TextInput = ({ onChange, label }) => (
   <TextField
-    floatingLabelText="Salário mensal bruto CLT"
+    floatingLabelText={label}
     fullWidth={true}
     onChange={onChange}
   />

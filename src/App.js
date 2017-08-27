@@ -31,7 +31,7 @@ class App extends Component {
 
   calculate() {
     this.setState({
-      showResult: !this.state.showResult,
+      showResult: true,
       employeeYearly: this.employeeYearlyEarnings(
         this.state.employeeMonthly),
       companyYearly: this.companyYearlyEarnings(
