@@ -1,19 +1,105 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+// material-ui
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+import { Table, TableBody, TableHeader, TableFooter } from 'material-ui/Table';
+import { TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <MuiThemeProvider>
+        <div>
+          <div
+            className="container"
+            style={{
+              width: '96%',
+              margin: 'auto',
+            }}
+          >
+            <AppBar
+              title="Melhor oferta de trabalho"
+              showMenuIconButton={false}
+            />
+            <h3 style={{width: '100%', textAlign: 'center'}}>
+              Compare qual seria seu rendimento anual com CLT x PJ
+            </h3>
+            <Table id='inputs' selectable={false}>
+              <TableHeader
+                displaySelectAll={false}
+                adjustForCheckbox={false}
+              >
+                <TableRow>
+                  <TableHeaderColumn style={{textAlign:'center'}}>
+                    CLT
+                  </TableHeaderColumn>
+                  <TableHeaderColumn style={{textAlign:'center'}}>
+                    PJ
+                  </TableHeaderColumn>
+                </TableRow>
+              </TableHeader>
+              <TableBody displayRowCheckbox={false}>
+                <TableRow>
+                  <TableRowColumn>
+                    <TextField
+                      floatingLabelText="Salário mensal bruto CLT"
+                      fullWidth={true}
+                    >
+                    </TextField>
+                  </TableRowColumn>
+                  <TableRowColumn>
+                    <TextField
+                      floatingLabelText="Faturamento mensal bruto PJ"
+                      fullWidth={true}
+                    >
+                    </TextField>
+                  </TableRowColumn>
+                </TableRow>
+              </TableBody>
+              <TableFooter adjustForCheckbox={false}>
+                <TableRow>
+                  <TableRowColumn style={{ textAlign: 'center' }}>
+                      <RaisedButton
+                        label="Calcular"
+                        primary={true}
+                      />
+                  </TableRowColumn>
+                </TableRow>
+              </TableFooter>
+            </Table>
+
+            <Table id='results' selectable={false}>
+              <TableHeader
+                displaySelectAll={false}
+                adjustForCheckbox={false}
+              >
+                <TableRow>
+                  <TableHeaderColumn style={{textAlign:'center'}}>
+                    Rendimento anual CLT
+                  </TableHeaderColumn>
+                  <TableHeaderColumn style={{textAlign:'center'}}>
+                    Rendimento anual PJ
+                  </TableHeaderColumn>
+                </TableRow>
+              </TableHeader>
+              <TableBody displayRowCheckbox={false}>
+                <TableRow>
+                  <TableRowColumn>
+                    {}
+                  </TableRowColumn>
+                  <TableRowColumn>
+                    {}
+                  </TableRowColumn>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
