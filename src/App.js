@@ -10,6 +10,15 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      cltMes: 0,
+      pjMes:  0,
+    };
+  }
+
   render() {
     return (
       <MuiThemeProvider>
@@ -48,15 +57,23 @@ class App extends Component {
                     <TextField
                       floatingLabelText="Salário mensal bruto CLT"
                       fullWidth={true}
-                    >
-                    </TextField>
+                      onChange={(event) => {                        
+                        this.setState({
+                          cltMes: event.target.value,
+                        })
+                      }}
+                    />
                   </TableRowColumn>
                   <TableRowColumn>
                     <TextField
                       floatingLabelText="Faturamento mensal bruto PJ"
                       fullWidth={true}
-                    >
-                    </TextField>
+                      onChange={(event) => {
+                        this.setState({
+                          pjMes: event.target.value,
+                        })
+                      }}
+                    />
                   </TableRowColumn>
                 </TableRow>
               </TableBody>
@@ -89,10 +106,10 @@ class App extends Component {
               <TableBody displayRowCheckbox={false}>
                 <TableRow>
                   <TableRowColumn>
-                    {}
+                    {this.state.cltMes * 12}
                   </TableRowColumn>
                   <TableRowColumn>
-                    {}
+                    {this.state.pjMes * 12}
                   </TableRowColumn>
                 </TableRow>
               </TableBody>
