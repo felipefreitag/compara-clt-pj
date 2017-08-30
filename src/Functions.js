@@ -52,19 +52,32 @@ function employeeYearlyEarnings(employeeMonthly) {
   const vacations = netSalary(grossEarning * 1.3);
   // Total: 11 monthly payments + 1 with vacations + 13º
   const yearTotal = 12 * netMonthly + vacations;
-  const formatNum = yearTotal.toLocaleString('de-DE',
-    { maximumFractionDigits: '2'});
-  return formatNum;
+  return yearTotal.toLocaleString('de-DE', { maximumFractionDigits: '2'});
+}
+
+function employeeResults(employeeMonthly) {
+  const grossEarning = parseFloat(employeeMonthly);
+  const fgts = grossEarning * 13.3 * 0.08;
+  return {
+    name: "employee",
+    yearly: employeeYearlyEarnings(employeeMonthly),
+    fgts: fgts.toLocaleString('de-DE', { maximumFractionDigits: '2'}),
+  }
 }
 
 function companyYearlyEarnings(companyMonthly) {
   const grossEarning = parseFloat(companyMonthly);
   const netMonthly = grossEarning - 60;
   const yearTotal = 12 * netMonthly;
-  const formatNum = yearTotal.toLocaleString('de-DE',
-    { maximumFractionDigits: '2'});
-  return formatNum;
+  return yearTotal.toLocaleString('de-DE', { maximumFractionDigits: '2'});
+}
+
+function companyResults(companyMonthly) {
+  return {
+    name: "company",
+    yearly: companyYearlyEarnings(companyMonthly),
+  }
 }
 
 export { handleChange, handleEmployeeChange, handleCompanyChange }
-export { employeeYearlyEarnings, companyYearlyEarnings }
+export { employeeResults, companyResults }

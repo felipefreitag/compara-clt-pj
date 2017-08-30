@@ -10,34 +10,34 @@ import ShowResults from './ShowResults'
 import Disclaimer from './Disclaimer'
 // functions
 import { handleChange, handleEmployeeChange, handleCompanyChange } from './Functions'
-import { employeeYearlyEarnings, companyYearlyEarnings } from './Functions'
+import { employeeResults, companyResults } from './Functions'
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      showResult: false,
       employeeMonthly: 0,
       companyMonthly:  0,
-      showResult: false,
       employeeYearly: 0,
       companyYearly: 0,
+      employeeResults: {},
+      companyResults: {},
     };
 
     this.handleChange = handleChange
     this.handleEmployeeChange = handleEmployeeChange
     this.handleCompanyChange = handleCompanyChange
-    this.employeeYearlyEarnings = employeeYearlyEarnings
-    this.companyYearlyEarnings = companyYearlyEarnings
+    //this.employeeResults = employeeResults
+    //this.companyResults = companyResults
   }
 
   calculate() {
     this.setState({
       showResult: true,
-      employeeYearly: this.employeeYearlyEarnings(
-        this.state.employeeMonthly),
-      companyYearly: this.companyYearlyEarnings(
-        this.state.companyMonthly),
+      employeeResults: employeeResults(this.state.employeeMonthly),
+      companyResults: companyResults(this.state.companyMonthly),
     })
   }
 
@@ -62,8 +62,8 @@ class App extends Component {
             { this.state.showResult ?
               <div>
                 <ShowResults
-                  employeeYearly={this.state.employeeYearly}
-                  companyYearly={this.state.companyYearly}
+                  employee={this.state.employeeResults}
+                  company={this.state.companyResults}
                 />
                 <Disclaimer />
               </div>
