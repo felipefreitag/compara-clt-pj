@@ -39,6 +39,13 @@ function irrfCalc(salary) {
   return result;
 }
 
+function transport(salary) {
+  const pass = 4.05
+  const monthTransport = 4.05 * 2 * 22
+  const percent = salary * 0.06
+  return monthTransport > percent ? percent : monthTransport
+}
+
 function netSalary(salary) {
   const inss = inssCalc(salary);
   const irrf = irrfCalc(salary - inss);
