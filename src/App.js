@@ -9,8 +9,8 @@ import DataEntry from './DataEntry'
 import ShowResults from './ShowResults'
 import Disclaimer from './Disclaimer'
 // functions
-import { handleChange, handleEmployeeChange, handleCompanyChange } from './Functions'
-import { employeeResults, companyResults } from './Functions'
+import { handleChange, handleEmployeeChange, handleCompanyChange } from './functions'
+import { employeeResults, companyResults } from './functions'
 
 class App extends Component {
   constructor(props) {
@@ -29,8 +29,6 @@ class App extends Component {
     this.handleChange = handleChange
     this.handleEmployeeChange = handleEmployeeChange
     this.handleCompanyChange = handleCompanyChange
-    //this.employeeResults = employeeResults
-    //this.companyResults = companyResults
   }
 
   calculate() {

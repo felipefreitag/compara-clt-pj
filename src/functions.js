@@ -88,3 +88,4 @@ function companyResults(companyMonthly) {
 
 export { handleChange, handleEmployeeChange, handleCompanyChange }
 export { employeeResults, companyResults }
+export { inssCalc }
