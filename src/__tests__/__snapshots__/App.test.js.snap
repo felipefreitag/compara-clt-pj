@@ -252,7 +252,7 @@ exports[`renders correctly 1`] = `
                 >
                   <label
                     className={undefined}
-                    htmlFor="undefined-undefined-SalriobrutoCLT-4932"
+                    htmlFor="Salário bruto CLT"
                     onClick={undefined}
                     style={
                       Object {
@@ -274,7 +274,7 @@ exports[`renders correctly 1`] = `
                   </label>
                   <input
                     disabled={false}
-                    id="undefined-undefined-SalriobrutoCLT-4932"
+                    id="Salário bruto CLT"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -384,7 +384,7 @@ exports[`renders correctly 1`] = `
                 >
                   <label
                     className={undefined}
-                    htmlFor="undefined-undefined-FaturamentomensalMEI-5575"
+                    htmlFor="Faturamento mensal MEI"
                     onClick={undefined}
                     style={
                       Object {
@@ -406,7 +406,7 @@ exports[`renders correctly 1`] = `
                   </label>
                   <input
                     disabled={false}
-                    id="undefined-undefined-FaturamentomensalMEI-5575"
+                    id="Faturamento mensal MEI"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -566,7 +566,6 @@ exports[`renders correctly 1`] = `
                 >
                   <button
                     disabled={false}
-                    href={undefined}
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -602,7 +601,6 @@ exports[`renders correctly 1`] = `
                         "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                         "verticalAlign": null,
                         "width": "100%",
-                        "zIndex": 1,
                       }
                     }
                     tabIndex={0}

@@ -6,6 +6,7 @@ const TextInput = ({ onChange, label }) => (
     floatingLabelText={label}
     fullWidth={true}
     onChange={onChange}
+    id={label}
   />
 );
 
