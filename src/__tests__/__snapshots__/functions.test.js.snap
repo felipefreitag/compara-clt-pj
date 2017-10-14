@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`companyResults returns the correct value 1`] = `
+Object {
+  "name": "company",
+  "yearly": "11,280",
+}
+`;
+
+exports[`companyResults returns the correct value 2`] = `
+Object {
+  "name": "company",
+  "yearly": "23,280",
+}
+`;
+
+exports[`companyResults returns the correct value 3`] = `
+Object {
+  "name": "company",
+  "yearly": "59,280",
+}
+`;
+
+exports[`companyResults returns the correct value 4`] = `
+Object {
+  "name": "company",
+  "yearly": "119,280",
+}
+`;
+
+exports[`companyYearlyEarnings returns the correct value 1`] = `"11,280"`;
+
+exports[`companyYearlyEarnings returns the correct value 2`] = `"23,280"`;
+
+exports[`companyYearlyEarnings returns the correct value 3`] = `"59,280"`;
+
+exports[`companyYearlyEarnings returns the correct value 4`] = `"119,280"`;
+
+exports[`employeeResults returns the correct value 1`] = `
+Object {
+  "fgts": "1,064",
+  "name": "employee",
+  "yearly": "12,236",
+}
+`;
+
+exports[`employeeResults returns the correct value 2`] = `
+Object {
+  "fgts": "2,128",
+  "name": "employee",
+  "yearly": "24,171.35",
+}
+`;
+
+exports[`employeeResults returns the correct value 3`] = `
+Object {
+  "fgts": "5,320",
+  "name": "employee",
+  "yearly": "54,159.3",
+}
+`;
+
+exports[`employeeResults returns the correct value 4`] = `
+Object {
+  "fgts": "10,640",
+  "name": "employee",
+  "yearly": "101,992.09",
+}
+`;

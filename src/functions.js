@@ -99,7 +99,7 @@ function translate(str) {
       translated = 'Em um ano, você recebe:';
       break;
     case 'fgts':
-      translated = 'FTGS acumulado:';
+      translated = 'FGTS acumulado:';
       break;
     default: translated = str;
   }
@@ -117,5 +117,6 @@ function omit(obj, omitKey) {
 }
 
 export { handleChange, handleEmployeeChange, handleCompanyChange }
-export { employeeResults, companyResults }
-export { inssCalc, translate, omit }
+export { employeeResults, companyResults, netSalary, employeeYearlyEarnings }
+export { inssCalc, irrfCalc, transport, translate, omit }
+export { companyYearlyEarnings }
