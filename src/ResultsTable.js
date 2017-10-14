@@ -1,35 +1,7 @@
 import React from 'react';
 import { Table, TableBody, TableHeader } from 'material-ui/Table';
 import { TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
-
-function translate(str) {
-  let translated = ';'
-  switch (str) {
-    case 'employee':
-      translated = 'CLT';
-      break;
-    case 'company':
-      translated = 'PJ';
-      break;
-    case 'yearly':
-      translated = 'Em um ano, você recebe:';
-      break;
-    case 'fgts':
-      translated = 'FTGS acumulado:';
-      break;
-    default: translated = str;
-  }
-  return translated;
-}
-
-function omit(obj, omitKey) {
-  return Object.keys(obj).reduce((result, key) => {
-    if(key !== omitKey) {
-       result[key] = obj[key];
-    }
-    return result;
-  }, {});
-}
+import { translate, omit } from './functions'
 
 const ResultsTable = ({ toShow }) => {
   const noName = omit(toShow, 'name');
@@ -42,7 +14,7 @@ const ResultsTable = ({ toShow }) => {
       >
         <TableRow>
           <TableHeaderColumn>
-            Resultados {translate(toShow.name)}
+            Resultados { toShow && translate(toShow.name) }
           </TableHeaderColumn>
         </TableRow>
       </TableHeader>
