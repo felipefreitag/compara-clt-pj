@@ -1,25 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import renderer from 'react-test-renderer'
-//import Enzyme, { shallow } from 'enzyme'
-//import Adapter from 'enzyme-adapter-react-16'
+import Enzyme, { shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 import { employeeResults, companyResults } from '../functions'
 import App from '../App'
 
-jest.mock('../functions', () => {
-  employeeResults: jest.fn(() => ({
-    name: 'employee',
-    yearly: 1000.0,
-    fgts: 20.0,
-  }))
+jest.mock('../functions')
 
-  companyResults: jest.fn(() => ({
-    name: 'employee',
-    yearly: 2000.0,
-  }))
-})
-
-//Enzyme.configure({ adapter: new Adapter() })
+Enzyme.configure({ adapter: new Adapter() })
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -33,11 +22,22 @@ it('renders correctly', () => {
     expect(tree).toMatchSnapshot()
 })
 
-// describe('calculate', () => {
-//   it('stores the results in the state', () => {
-//     const wrapper = shallow(<App />)
-//     wrapper.instance().calculate()
-//     expect(employeeResults).toHaveBeenCalled()
-//     expect(companyResults).toHaveBeenCalled()
-//   })
-// })
+describe('calculate', () => {
+  const initialState = {
+    showResult: false,
+    employeeMonthly: 0,
+    companyMonthly:  0,
+    employeeYearly: 0,
+    companyYearly: 0,
+    employeeResults: {},
+    companyResults: {},
+  }
+  it('calls the correct functions', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper.instance().state).toEqual(initialState)
+    wrapper.instance().calculate()
+    expect(employeeResults).toHaveBeenCalled()
+    expect(companyResults).toHaveBeenCalled()
+    expect(wrapper.instance().state.showResult).toBe(true)
+  })
+})
