@@ -39,5 +39,6 @@ describe('calculate', () => {
     expect(employeeResults).toHaveBeenCalled()
     expect(companyResults).toHaveBeenCalled()
     expect(wrapper.instance().state.showResult).toBe(true)
+    expect(wrapper).toMatchSnapshot()
   })
 })

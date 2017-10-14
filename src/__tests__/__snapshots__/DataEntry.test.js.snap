@@ -1,0 +1,961 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataEntry />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "allRowsSelected": false,
+      "children": Array [
+        <TableHeader
+          adjustForCheckbox={false}
+          displaySelectAll={false}
+          enableSelectAll={true}
+          selectAllSelected={false}
+>
+          <TableRow
+                    displayBorder={true}
+                    hoverable={false}
+                    hovered={false}
+                    selectable={true}
+                    striped={false}
+          >
+                    <TableHeaderColumn
+                              style={
+                                        Object {
+                                                  "textAlign": "center",
+                                                }
+                              }
+                    >
+                              CLT
+                    </TableHeaderColumn>
+                    <TableHeaderColumn
+                              style={
+                                        Object {
+                                                  "textAlign": "center",
+                                                }
+                              }
+                    >
+                              PJ
+                    </TableHeaderColumn>
+          </TableRow>
+</TableHeader>,
+        <TableBody
+          allRowsSelected={false}
+          deselectOnClickaway={true}
+          displayRowCheckbox={false}
+          multiSelectable={false}
+          preScanRows={true}
+          selectable={true}
+          style={Object {}}
+>
+          <TableRow
+                    displayBorder={true}
+                    hoverable={false}
+                    hovered={false}
+                    selectable={true}
+                    striped={false}
+          >
+                    <TableRowColumn
+                              hoverable={false}
+                    >
+                              <TextInput
+                                        label="Salário bruto CLT"
+                                        onChange={undefined}
+                              />
+                    </TableRowColumn>
+                    <TableRowColumn
+                              hoverable={false}
+                    >
+                              <TextInput
+                                        label="Faturamento mensal MEI"
+                                        onChange={undefined}
+                              />
+                    </TableRowColumn>
+          </TableRow>
+</TableBody>,
+        <TableFooter
+          adjustForCheckbox={false}
+          style={Object {}}
+>
+          <TableRow
+                    displayBorder={true}
+                    hoverable={false}
+                    hovered={false}
+                    selectable={true}
+                    striped={false}
+                    style={
+                              Object {
+                                        "borderTop": "0px",
+                                      }
+                    }
+          >
+                    <TableRowColumn
+                              hoverable={false}
+                              style={
+                                        Object {
+                                                  "textAlign": "center",
+                                                }
+                              }
+                    >
+                              <RaisedButton
+                                        disabled={false}
+                                        fullWidth={false}
+                                        label="Calcular"
+                                        labelPosition="after"
+                                        onClick={undefined}
+                                        primary={true}
+                                        secondary={false}
+                              />
+                    </TableRowColumn>
+          </TableRow>
+</TableFooter>,
+      ],
+      "fixedFooter": true,
+      "fixedHeader": true,
+      "height": "inherit",
+      "id": "inputs",
+      "multiSelectable": false,
+      "selectable": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "adjustForCheckbox": false,
+          "children": <TableRow
+            displayBorder={true}
+            hoverable={false}
+            hovered={false}
+            selectable={true}
+            striped={false}
+>
+            <TableHeaderColumn
+                        style={
+                                    Object {
+                                                "textAlign": "center",
+                                              }
+                        }
+            >
+                        CLT
+            </TableHeaderColumn>
+            <TableHeaderColumn
+                        style={
+                                    Object {
+                                                "textAlign": "center",
+                                              }
+                        }
+            >
+                        PJ
+            </TableHeaderColumn>
+</TableRow>,
+          "displaySelectAll": false,
+          "enableSelectAll": true,
+          "selectAllSelected": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <TableHeaderColumn
+                style={
+                                Object {
+                                                "textAlign": "center",
+                                              }
+                }
+>
+                CLT
+</TableHeaderColumn>,
+              <TableHeaderColumn
+                style={
+                                Object {
+                                                "textAlign": "center",
+                                              }
+                }
+>
+                PJ
+</TableHeaderColumn>,
+            ],
+            "displayBorder": true,
+            "hoverable": false,
+            "hovered": false,
+            "selectable": true,
+            "striped": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "CLT",
+                "style": Object {
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "CLT",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "PJ",
+                "style": Object {
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "PJ",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "allRowsSelected": false,
+          "children": <TableRow
+            displayBorder={true}
+            hoverable={false}
+            hovered={false}
+            selectable={true}
+            striped={false}
+>
+            <TableRowColumn
+                        hoverable={false}
+            >
+                        <TextInput
+                                    label="Salário bruto CLT"
+                                    onChange={undefined}
+                        />
+            </TableRowColumn>
+            <TableRowColumn
+                        hoverable={false}
+            >
+                        <TextInput
+                                    label="Faturamento mensal MEI"
+                                    onChange={undefined}
+                        />
+            </TableRowColumn>
+</TableRow>,
+          "deselectOnClickaway": true,
+          "displayRowCheckbox": false,
+          "multiSelectable": false,
+          "preScanRows": true,
+          "selectable": true,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <TableRowColumn
+                hoverable={false}
+>
+                <TextInput
+                                label="Salário bruto CLT"
+                                onChange={undefined}
+                />
+</TableRowColumn>,
+              <TableRowColumn
+                hoverable={false}
+>
+                <TextInput
+                                label="Faturamento mensal MEI"
+                                onChange={undefined}
+                />
+</TableRowColumn>,
+            ],
+            "displayBorder": true,
+            "hoverable": false,
+            "hovered": false,
+            "selectable": true,
+            "striped": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": <TextInput
+                  label="Salário bruto CLT"
+                  onChange={undefined}
+/>,
+                "hoverable": false,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Salário bruto CLT",
+                  "onChange": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": <TextInput
+                  label="Faturamento mensal MEI"
+                  onChange={undefined}
+/>,
+                "hoverable": false,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Faturamento mensal MEI",
+                  "onChange": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "adjustForCheckbox": false,
+          "children": <TableRow
+            displayBorder={true}
+            hoverable={false}
+            hovered={false}
+            selectable={true}
+            striped={false}
+            style={
+                        Object {
+                                    "borderTop": "0px",
+                                  }
+            }
+>
+            <TableRowColumn
+                        hoverable={false}
+                        style={
+                                    Object {
+                                                "textAlign": "center",
+                                              }
+                        }
+            >
+                        <RaisedButton
+                                    disabled={false}
+                                    fullWidth={false}
+                                    label="Calcular"
+                                    labelPosition="after"
+                                    onClick={undefined}
+                                    primary={true}
+                                    secondary={false}
+                        />
+            </TableRowColumn>
+</TableRow>,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "children": <TableRowColumn
+              hoverable={false}
+              style={
+                            Object {
+                                          "textAlign": "center",
+                                        }
+              }
+>
+              <RaisedButton
+                            disabled={false}
+                            fullWidth={false}
+                            label="Calcular"
+                            labelPosition="after"
+                            onClick={undefined}
+                            primary={true}
+                            secondary={false}
+              />
+</TableRowColumn>,
+            "displayBorder": true,
+            "hoverable": false,
+            "hovered": false,
+            "selectable": true,
+            "striped": false,
+            "style": Object {
+              "borderTop": "0px",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": <RaisedButton
+                disabled={false}
+                fullWidth={false}
+                label="Calcular"
+                labelPosition="after"
+                onClick={undefined}
+                primary={true}
+                secondary={false}
+/>,
+              "hoverable": false,
+              "style": Object {
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": false,
+                "fullWidth": false,
+                "label": "Calcular",
+                "labelPosition": "after",
+                "onClick": undefined,
+                "primary": true,
+                "secondary": false,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "allRowsSelected": false,
+        "children": Array [
+          <TableHeader
+            adjustForCheckbox={false}
+            displaySelectAll={false}
+            enableSelectAll={true}
+            selectAllSelected={false}
+>
+            <TableRow
+                        displayBorder={true}
+                        hoverable={false}
+                        hovered={false}
+                        selectable={true}
+                        striped={false}
+            >
+                        <TableHeaderColumn
+                                    style={
+                                                Object {
+                                                            "textAlign": "center",
+                                                          }
+                                    }
+                        >
+                                    CLT
+                        </TableHeaderColumn>
+                        <TableHeaderColumn
+                                    style={
+                                                Object {
+                                                            "textAlign": "center",
+                                                          }
+                                    }
+                        >
+                                    PJ
+                        </TableHeaderColumn>
+            </TableRow>
+</TableHeader>,
+          <TableBody
+            allRowsSelected={false}
+            deselectOnClickaway={true}
+            displayRowCheckbox={false}
+            multiSelectable={false}
+            preScanRows={true}
+            selectable={true}
+            style={Object {}}
+>
+            <TableRow
+                        displayBorder={true}
+                        hoverable={false}
+                        hovered={false}
+                        selectable={true}
+                        striped={false}
+            >
+                        <TableRowColumn
+                                    hoverable={false}
+                        >
+                                    <TextInput
+                                                label="Salário bruto CLT"
+                                                onChange={undefined}
+                                    />
+                        </TableRowColumn>
+                        <TableRowColumn
+                                    hoverable={false}
+                        >
+                                    <TextInput
+                                                label="Faturamento mensal MEI"
+                                                onChange={undefined}
+                                    />
+                        </TableRowColumn>
+            </TableRow>
+</TableBody>,
+          <TableFooter
+            adjustForCheckbox={false}
+            style={Object {}}
+>
+            <TableRow
+                        displayBorder={true}
+                        hoverable={false}
+                        hovered={false}
+                        selectable={true}
+                        striped={false}
+                        style={
+                                    Object {
+                                                "borderTop": "0px",
+                                              }
+                        }
+            >
+                        <TableRowColumn
+                                    hoverable={false}
+                                    style={
+                                                Object {
+                                                            "textAlign": "center",
+                                                          }
+                                    }
+                        >
+                                    <RaisedButton
+                                                disabled={false}
+                                                fullWidth={false}
+                                                label="Calcular"
+                                                labelPosition="after"
+                                                onClick={undefined}
+                                                primary={true}
+                                                secondary={false}
+                                    />
+                        </TableRowColumn>
+            </TableRow>
+</TableFooter>,
+        ],
+        "fixedFooter": true,
+        "fixedHeader": true,
+        "height": "inherit",
+        "id": "inputs",
+        "multiSelectable": false,
+        "selectable": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "adjustForCheckbox": false,
+            "children": <TableRow
+              displayBorder={true}
+              hoverable={false}
+              hovered={false}
+              selectable={true}
+              striped={false}
+>
+              <TableHeaderColumn
+                            style={
+                                          Object {
+                                                        "textAlign": "center",
+                                                      }
+                            }
+              >
+                            CLT
+              </TableHeaderColumn>
+              <TableHeaderColumn
+                            style={
+                                          Object {
+                                                        "textAlign": "center",
+                                                      }
+                            }
+              >
+                            PJ
+              </TableHeaderColumn>
+</TableRow>,
+            "displaySelectAll": false,
+            "enableSelectAll": true,
+            "selectAllSelected": false,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <TableHeaderColumn
+                  style={
+                                    Object {
+                                                      "textAlign": "center",
+                                                    }
+                  }
+>
+                  CLT
+</TableHeaderColumn>,
+                <TableHeaderColumn
+                  style={
+                                    Object {
+                                                      "textAlign": "center",
+                                                    }
+                  }
+>
+                  PJ
+</TableHeaderColumn>,
+              ],
+              "displayBorder": true,
+              "hoverable": false,
+              "hovered": false,
+              "selectable": true,
+              "striped": false,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "CLT",
+                  "style": Object {
+                    "textAlign": "center",
+                  },
+                },
+                "ref": null,
+                "rendered": "CLT",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "PJ",
+                  "style": Object {
+                    "textAlign": "center",
+                  },
+                },
+                "ref": null,
+                "rendered": "PJ",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "allRowsSelected": false,
+            "children": <TableRow
+              displayBorder={true}
+              hoverable={false}
+              hovered={false}
+              selectable={true}
+              striped={false}
+>
+              <TableRowColumn
+                            hoverable={false}
+              >
+                            <TextInput
+                                          label="Salário bruto CLT"
+                                          onChange={undefined}
+                            />
+              </TableRowColumn>
+              <TableRowColumn
+                            hoverable={false}
+              >
+                            <TextInput
+                                          label="Faturamento mensal MEI"
+                                          onChange={undefined}
+                            />
+              </TableRowColumn>
+</TableRow>,
+            "deselectOnClickaway": true,
+            "displayRowCheckbox": false,
+            "multiSelectable": false,
+            "preScanRows": true,
+            "selectable": true,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <TableRowColumn
+                  hoverable={false}
+>
+                  <TextInput
+                                    label="Salário bruto CLT"
+                                    onChange={undefined}
+                  />
+</TableRowColumn>,
+                <TableRowColumn
+                  hoverable={false}
+>
+                  <TextInput
+                                    label="Faturamento mensal MEI"
+                                    onChange={undefined}
+                  />
+</TableRowColumn>,
+              ],
+              "displayBorder": true,
+              "hoverable": false,
+              "hovered": false,
+              "selectable": true,
+              "striped": false,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <TextInput
+                    label="Salário bruto CLT"
+                    onChange={undefined}
+/>,
+                  "hoverable": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Salário bruto CLT",
+                    "onChange": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <TextInput
+                    label="Faturamento mensal MEI"
+                    onChange={undefined}
+/>,
+                  "hoverable": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Faturamento mensal MEI",
+                    "onChange": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "adjustForCheckbox": false,
+            "children": <TableRow
+              displayBorder={true}
+              hoverable={false}
+              hovered={false}
+              selectable={true}
+              striped={false}
+              style={
+                            Object {
+                                          "borderTop": "0px",
+                                        }
+              }
+>
+              <TableRowColumn
+                            hoverable={false}
+                            style={
+                                          Object {
+                                                        "textAlign": "center",
+                                                      }
+                            }
+              >
+                            <RaisedButton
+                                          disabled={false}
+                                          fullWidth={false}
+                                          label="Calcular"
+                                          labelPosition="after"
+                                          onClick={undefined}
+                                          primary={true}
+                                          secondary={false}
+                            />
+              </TableRowColumn>
+</TableRow>,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": <TableRowColumn
+                hoverable={false}
+                style={
+                                Object {
+                                                "textAlign": "center",
+                                              }
+                }
+>
+                <RaisedButton
+                                disabled={false}
+                                fullWidth={false}
+                                label="Calcular"
+                                labelPosition="after"
+                                onClick={undefined}
+                                primary={true}
+                                secondary={false}
+                />
+</TableRowColumn>,
+              "displayBorder": true,
+              "hoverable": false,
+              "hovered": false,
+              "selectable": true,
+              "striped": false,
+              "style": Object {
+                "borderTop": "0px",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": <RaisedButton
+                  disabled={false}
+                  fullWidth={false}
+                  label="Calcular"
+                  labelPosition="after"
+                  onClick={undefined}
+                  primary={true}
+                  secondary={false}
+/>,
+                "hoverable": false,
+                "style": Object {
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "disabled": false,
+                  "fullWidth": false,
+                  "label": "Calcular",
+                  "labelPosition": "after",
+                  "onClick": undefined,
+                  "primary": true,
+                  "secondary": false,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
