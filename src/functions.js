@@ -86,6 +86,37 @@ function companyResults(companyMonthly) {
   }
 }
 
+function translate(str) {
+  let translated = ';'
+  switch (str) {
+    case 'employee':
+      translated = 'CLT';
+      break;
+    case 'company':
+      translated = 'PJ';
+      break;
+    case 'yearly':
+      translated = 'Em um ano, você recebe:';
+      break;
+    case 'fgts':
+      translated = 'FGTS acumulado:';
+      break;
+    default: translated = str;
+  }
+  return translated;
+}
+
+function omit(obj, omitKey) {
+  if (!obj) { return {} }
+  return Object.keys(obj).reduce((result, key) => {
+    if(key !== omitKey) {
+       result[key] = obj[key];
+    }
+    return result;
+  }, {});
+}
+
 export { handleChange, handleEmployeeChange, handleCompanyChange }
-export { employeeResults, companyResults }
-export { inssCalc }
+export { employeeResults, companyResults, netSalary, employeeYearlyEarnings }
+export { inssCalc, irrfCalc, transport, translate, omit }
+export { companyYearlyEarnings }

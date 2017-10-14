@@ -41,8 +41,7 @@ const DataEntry = props => {
         <TableRow style={{borderTop: '0px'}}>
           <TableRowColumn style={{ textAlign: 'center' }}>
               <RaisedButton
-                label={showResult ?
-                  "Recalcular" : "Calcular"}
+                label="Calcular"
                 primary={true}
                 onClick={props.calculate}
               />

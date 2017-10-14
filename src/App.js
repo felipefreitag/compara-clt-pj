@@ -24,7 +24,7 @@ class App extends Component {
       companyYearly: 0,
       employeeResults: {},
       companyResults: {},
-    };
+    }
 
     this.handleChange = handleChange
     this.handleEmployeeChange = handleEmployeeChange
